@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  n8ndash:
+    image: php:8.2-apache
+    container_name: n8ndash
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    restart: unless-stopped
