@@ -10,4 +10,6 @@ services:
       - ./:/var/www/html
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html
+      - N8N_URL=https://uptk-n8n-0e8ab9-72-60-4-166.traefik.me
+      - N8N_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3ZDk4YjY0Zi0wZGEwLTQyY2ItYmYyZC00NTY3OWUyZGFiODUiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzcxMDk5OTM0fQ.V2Oxjqsj8r5ao-mZs8fFynjMeP5C3jLOp7uKdmQeIug
     restart: unless-stopped
